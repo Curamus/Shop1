@@ -1,0 +1,13 @@
+﻿
+<h1>All products</h1>
+<h3>@Model.currCategory</h3>
+@{ 
+    foreach (var product in Model.AllProducts)
+    {
+    <div>
+        <p>Name: @product.name </p>
+        <p>Price: @product.price.ToString("c") </p>
+    </div>
+    }
+}
+
